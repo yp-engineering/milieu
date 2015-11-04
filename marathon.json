@@ -1,0 +1,17 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "ypengineering/milieu",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8080, "hostPort": 0, "protocol": "tcp" }
+      ],
+      "forcePullImage": true
+    }
+  },
+  "id": "milieu",
+  "instances": 1,
+  "cpus": 0.1,
+  "mem": 8
+}
