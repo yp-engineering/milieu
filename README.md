@@ -30,6 +30,6 @@ curl -i -H 'Content-Type: application/json' -d @marathon.json localhost:8080/v2/
 
 where localhost:8080 is host:port of your marathon server.
 
-# Licence
+# License
 
-See [LICENCE](LICENCE)
+See [LICENSE](LICENSE)
