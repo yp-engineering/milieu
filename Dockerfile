@@ -7,6 +7,6 @@ MAINTAINER Adam Avilla <aavilla@yp.com>
 
 COPY milieu /
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ./milieu

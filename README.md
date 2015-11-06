@@ -9,13 +9,13 @@ balancers and such.
 # Usage
 
 ```bash
-docker run --rm -it -p 8080:8080 ypengineering/milieu
+docker run -P --name milieu --rm -it ypengineering/milieu
 ```
 
 Then just curl from the host like:
 
 ```bash
-curl 0:8080
+curl 0:$(docker inspect milieu | grep HostPort | sed s/[^0-9]//g)
 ```
 
 to see a response echoing your request and the container's env variables.
