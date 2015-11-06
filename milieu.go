@@ -44,5 +44,6 @@ func preview(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Fprintln(w, env)
+	fmt.Fprintln(w, env+"\n")
+	fmt.Fprintln(w, "Open sourced by YP LLC. http://engineering.yp.com")
 }
