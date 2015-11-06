@@ -25,7 +25,9 @@ to see a response echoing your request and the container's env variables.
 See the [marathon.json](marathon.json) but you can curl it like:
 
 ```bash
-curl -i -H 'Content-Type: application/json' -d @marathon.json localhost:8080/v2/apps
+curl -i -H 'Content-Type: application/json' \
+        -d @marathon.json \
+        localhost:8080/v2/apps
 ```
 
 where localhost:8080 is host:port of your marathon server.
